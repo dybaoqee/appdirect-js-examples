@@ -5,9 +5,6 @@ This repository contains a set of examples utilizing AppDirect js library to ill
 This demo features: 
 1) How to generate a token after submitting a payment method
 2) How to create and retrieve a payment method - credit card
-3) How to create and retrieve a payment method - ACH
-
-**You can see the demo app running in test mode at .** (not supported)
 
 ## Documentation
 
@@ -18,8 +15,6 @@ This demo features:
 <script src="https://ad-js-sdk.appdirect.com/payment.js"></script>
 ```
 **Want to test a hosted version of this app with your own AppDirect account?** You can deploy an instance of this app on Heroku and set up your own API keys:
-
-## Add a section here explaining difference between direct and tokenization 
 
 ## License
 [License](https://github.com/AppDirect/appdirect-js-examples/blob/master/LICENSE.md)
