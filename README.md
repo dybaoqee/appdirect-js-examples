@@ -22,6 +22,6 @@ This demo features:
 ## Add a section here explaining difference between direct and tokenization 
 
 ## License
-[License](https://github.com/AppDirect/service-integration-sdk/blob/master/LICENSE.txt)
+[License](https://github.com/AppDirect/appdirect-js-examples/blob/master/LICENSE.md)
 
 ## Credits
