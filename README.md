@@ -11,11 +11,11 @@ This demo features:
 
 ## Documentation
 
-[Getting Started]() | [API Documentation](https://app.swaggerhub.com/apis/ds-support-2/PaymentMethodApi/2.0#/) | [docs](https://docs.google.com/document/d/1QjIL3Ov_SPxpNL-P0INqEcFpQ10waIlix5UwIAfEgn4/edit#)
+[Getting Started]() | [API Documentation](https://app.swaggerhub.com/apis/ds-support-2/PaymentMethodApi/2.0#/)
 
 ## Installation
 ```html
-<script src="https://js.appdirect.com/v3/payment.js"></script>
+<script src="https://ad-js-sdk.appdirect.com/payment.js"></script>
 ```
 **Want to test a hosted version of this app with your own AppDirect account?** You can deploy an instance of this app on Heroku and set up your own API keys:
 
