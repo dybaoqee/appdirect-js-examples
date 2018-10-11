@@ -7,8 +7,8 @@
 			<legend>AppDirect Token Generator</legend>
 			<legend>Billing Details</legend>
 			<div class="form-group">
-				<label class="control-label">Card Number</label>
-				<input type=text id="number" class="form-control col-md-6" data-ad="number" required>
+				<label class="control-label" for="number">Card Number</label>
+				<input type="text" id="number" class="form-control col-md-6" data-ad="number" required>
 				<div class="invalid-feedback">
 					Card number required.
 				</div>
@@ -43,8 +43,8 @@
 					</div>
 				</div>
 				<div class="form-group col-md-2">
-					<label>&nbsp</label>
-					<select class="form-control" name="expirationYear" data-ad="expirationYear" required>
+					<label for="expirationYear">&nbsp</label>
+					<select class="form-control" id="expirationYear" name="expirationYear" data-ad="expirationYear" required>
 						<option value="">Year</option>
 						<option value="2018">2018</option>
 						<option value="2019">2019</option>
@@ -55,20 +55,20 @@
 					</select>
 				</div>
 				<div class="form-group col-md-1">
-					<label>CVV</label>
-					<input class="form-control" name="securityCode" id="securityCode" data-ad="securityCode" required>
+					<label for="securityCode">CVV</label>
+					<input type="text" class="form-control" name="securityCode" id="securityCode" data-ad="securityCode" required>
 					<div class="invalid-feedback">
 						CVV required.
 					</div>
 				</div>
 			</div>
 		</fieldset>
-		<legend></legend>
+		<div>&nbsp;</div>
 		<fieldset>
 			<legend>Billing Address</legend>
 			<div class="form-group">
-				<label>Country</label>
-				<select class="form-control col-md-6 crs-country" data-region-id="region" data-value="shortcode"
+				<label for="country">Country</label>
+				<select id="country" class="form-control col-md-6 crs-country" data-region-id="state" data-value="shortcode"
 						name="country" data-ad="country" required>
 				</select>
 				<div class="invalid-feedback">
@@ -76,7 +76,7 @@
 				</div>
 			</div>
 			<div class="form-group">
-				<label>Address</label>
+				<label for="street1">Address</label>
 				<input type="text" class="form-control col-md-6" id="street1" data-ad="street1" required>
 				<div class="invalid-feedback">
 					Address required.
@@ -84,22 +84,22 @@
 			</div>
 			<div class="form-row">
 				<div class="form-group col-md-2">
-					<label>City</label>
+					<label for="city">City</label>
 					<input type=text class="form-control" data-ad="city" id="city" required>
 					<div class="invalid-feedback">
 						City required.
 					</div>
 				</div>
 				<div class="form-group col-md-2">
-					<label>State</label>
-					<select class="form-control" name="state" data-ad="state" id="region" required>
+					<label for="state">State</label>
+					<select class="form-control" name="state" data-ad="state" id="state" required>
 					</select>
 					<div class="invalid-feedback">
 						State required.
 					</div>
 				</div>
 				<div class="form-group col-md-2">
-					<label>Zip</label>
+					<label for="zip">Zip</label>
 					<input type="text" class="form-control" id="zip" data-ad="zip" required>
 					<div class="invalid-feedback">
 						Zip required.
@@ -142,7 +142,7 @@
             container.html('');
             container.append(
                 $('<dl class="row">').append('<dt class="col-sm-2">Token</dt><dd class="col-sm-10">'
-                    + res.data.id + '</dd>'
+                    + res.id + '</dd>'
                 )
             );
         });
@@ -151,8 +151,8 @@
     }
 </script>
 
-<script src="https://ad-js-sdk.appdirect.com/payment.js?version=0.2.5"></script>
 <link rel="stylesheet" type="text/css" href="../stylesheets/bootstrap.min.css">
+<script src="https://ad-js-sdk.appdirect.com/payment.js?version=0.2.5"></script>
 <script src="../javascripts/jquery-3.3.1.min.js"></script>
 <script src="../javascripts/bootstrap.min.js"></script>
 <script src="../javascripts/crs.min.js"></script>
