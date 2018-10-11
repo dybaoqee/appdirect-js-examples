@@ -149,11 +149,9 @@
         // Retrieve payment methods for a user/company
         payment.listPaymentMethods(user.userId, user.companyId).then(result => {
             const container = $('.response-container');
-            container.html('');
             container.append(
-                $('<dl class="row">').append('Card ending in '
-                    + result[0].accountDisplay + ' has been saved successfully</dd>'
-                )
+                $('<dl>').append('Card ending in '
+                    + result[0].accountDisplay + ' has been saved successfully!')
             );
         });
         return false;
